@@ -1,0 +1,11 @@
+products = {
+            "item_P01": {"item_id": "item_P01", "item_name": "프리미엄 스마트폰 X200", "category": "전자제품", "price": 1200000, "description": "최신 AI 기능이 탑재된 고성능 스마트폰", "reviews": ["성능 최고!", "카메라가 정말 좋아요."], "refund_rule": "개봉 후 단순 변심 반품 불가, 제품 하자 시 14일 이내 교환/환불 가능"},
+            "item_P02": {"item_id": "item_P02", "item_name": "노이즈캔슬링 헤드폰 Pro", "category": "전자제품", "price": 350000, "description": "몰입감 있는 사운드를 위한 최고의 선택", "reviews": ["음질이 선명해요.", "착용감이 편안합니다."], "refund_rule": "미사용 시 7일 이내 반품 가능"},
+            "item_P03": {"item_id": "item_P03", "item_name": "기계식 게이밍 키보드 K7", "category": "전자제품", "price": 180000, "description": "빠른 반응 속도와 화려한 RGB 조명", "reviews": ["타건감이 예술입니다!"], "refund_rule": "주문 제작 상품으로 교환/환불 불가"},
+            "item_P04": {"item_id": "item_P04", "item_name": "울트라 HD 4K 모니터 27인치", "category": "전자제품", "price": 450000, "description": "선명한 화질과 넓은 작업 공간 제공", "reviews": ["색감이 뛰어나요.", "디자인이 깔끔합니다."], "refund_rule": "제품 불량 시 1년 무상 AS"},
+            "item_C01": {"item_id": "item_C01", "item_name": "오가닉 코튼 티셔츠 (화이트)", "category": "의류", "price": 35000, "description": "부드러운 착용감의 친환경 소재 티셔츠", "reviews": ["소재가 정말 좋아요.", "기본템으로 딱!"], "refund_rule": "세탁 후 반품 불가, 사이즈 교환 1회 가능"},
+            "item_C02": {"item_id": "item_C02", "item_name": "슬림핏 데님 팬츠", "category": "의류", "price": 78000, "description": "어떤 스타일에도 잘 어울리는 슬림핏 청바지", "reviews": ["핏이 예뻐요.", "활동하기 편합니다."], "refund_rule": "택 제거 시 반품 불가"},
+            "item_K01": {"item_id": "item_K01", "item_name": "프리미엄 믹서기 세트", "category": "주방용품", "price": 125000, "description": "다양한 요리를 위한 강력한 성능의 믹서기", "reviews": ["잘 갈려요!", "세척이 간편해요."], "refund_rule": "사용 후 반품 불가, 모터 2년 보증"},
+            "item_B01": {"item_id": "item_B01", "item_name": "AI 시대의 마케팅 전략 (도서)", "category": "도서", "price": 22000, "description": "변화하는 시장에 대한 최신 마케팅 인사이트", "reviews": ["내용이 알차요.", "실무에 도움이 됩니다."], "refund_rule": "비닐 포장 개봉 시 반품 불가"},
+            "item_S01": {"item_id": "item_S01", "item_name": "탭댄스에 특화된 운동화", "category": "의류", "price": 95000, "description": "탭댄스 스텝에 최적화된 설계와 내구성", "reviews": [], "refund_rule": "최대 2회 무조건 교환 및 취소 가능"},
+        }
