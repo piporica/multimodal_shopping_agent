@@ -36,7 +36,7 @@ def summarize_conversation(state: ConversationState):
         if not (isinstance(m, AIMessage) and m.content.startswith(SUMMARY_MARKER))
     ]
 
-    keep_last_n = 3  # 최근 몇 개 일반 메시지는 남긴다
+    keep_last_n = 5  # 최근 몇 개 일반 메시지는 남긴다
     messages_to_summarize = normal_messages[:-keep_last_n] if len(normal_messages) > keep_last_n else []
 
     if not messages_to_summarize:

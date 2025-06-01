@@ -96,6 +96,6 @@ messages = [HumanMessage(content="다시 2를 더하고, 4를 곱한다.")]
 messages = [HumanMessage(content="다시 2를 더하고, 4를 곱한다.")]
 
 messages = agent_summarization.invoke({"messages": messages}, config=summarization_config)
+
 for m in messages["messages"]:
     m.pretty_print()
-
