@@ -1,13 +1,15 @@
 from dotenv import load_dotenv
+# API KEY 정보를 로드합니다. 파일 이름은 앞에 comma가 있는 ".env" 파일여야 합니다!
+load_dotenv(override=True)
+
+
 from langchain_openai import ChatOpenAI
 from langchain.schema import AIMessage, HumanMessage
 import base64
 import gradio as gr
 
-# API KEY 정보를 로드합니다. 파일 이름은 앞에 comma가 있는 ".env" 파일여야 합니다!
-load_dotenv(override=True)
 
-from agent_setting import graph
+from build_agent import graph
 
 def convert_to_url(image_path):
     """이미지를 URL 형식으로 변환"""

@@ -6,9 +6,11 @@ from collections import Counter
 from langchain_openai import ChatOpenAI 
 from langchain_core.messages import AnyMessage, AIMessage, SystemMessage, HumanMessage, ToolMessage
 
-from tools.database.delivery import delivery 
-from tools.database.orders import orders
-from tools.database.products import products
+#from-import 방식으로는 원본 변수가 수정되지 않아 변경
+import tools.database.delivery as delivery
+import tools.database.orders  as order
+import tools.database.products as product
+
 
 class GetUserPastOrdersInput(BaseModel):
     user_id: str = Field(description="주문 내역을 조회할 사용자의 ID. 시스템 메시지에 명시된 현재 고객 ID를 사용해야 합니다.")
@@ -45,11 +47,11 @@ class UpdateOrderDetailsInput(BaseModel):
 
 class CustomerServiceTools:
     def __init__(self):
-        self._products_db = products
+        self._products_db = product.products
 
-        self._orders_db = orders
+        self._orders_db = order.orders
 
-        self._delivery_db = delivery
+        self._delivery_db = delivery.delivery
 
     # 도구 메서드들은 이전과 동일하게 유지 ~ 구현 위치 (위의 DB를 참조하여)
     def get_user_past_orders(self, user_id: str) -> List[Dict[str, Any]]: # 반환 타입 수정

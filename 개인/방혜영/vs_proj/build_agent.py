@@ -1,4 +1,7 @@
 from dotenv import load_dotenv
+load_dotenv(override=True)
+
+
 from langchain_openai import ChatOpenAI
 from langchain.schema import AIMessage, HumanMessage
 from langchain_core.messages import SystemMessage, HumanMessage, ToolMessage, RemoveMessage
@@ -15,7 +18,7 @@ from memorize_message import summarize_conversation, should_continue
 
 
 # API KEY 정보를 로드합니다. 파일 이름은 앞에 comma가 있는 ".env" 파일여야 합니다!
-load_dotenv(override=True)
+
 llm = ChatOpenAI(model="gpt-4o-mini")
 
 # Augment the LLM with tools
